@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form</h1>
+
+<form action="#" th:action="@{/countresdelite}" th:object="${postform}" th:method="post">
+   <h1>dfsdf</h1>
+    <p>Id: <input type="text" th:field="*{id}" value="300"/></p>
+  <!--   <p>Name: <input type="text" th:field="*{name}" value="Kaliningradik"/></p>
+    <p>Poulation: <input type="text" th:field="*{population}" value="100000"/></p>
+    <p>gdp: <input type="text" th:field="*{gdp}" value="33" /></p>-->
+    <p><input type="submit" value="Delete" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

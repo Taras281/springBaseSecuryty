@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'id: ' + ${result.id}" />
+<p th:text="'name: ' + ${result.name}" />
+<p th:text="'Population: ' + ${result.population}" />
+<p th:text="'gdp: ' + ${result.gdp}" />
+<a href="/countreshtml">Submit new  Country</a>
+</body>
+</html>

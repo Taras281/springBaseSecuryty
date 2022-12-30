@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<ul>
+    <th:block th:each="country : ${list}">
+        <span th:utext="${country.getId}"> </span>
+        <span th:utext="${country.getName}"> </span>
+        <span th:utext="${country.getPopulation}"> </span>
+        <span th:utext="${country.gdp}"> </span>
+        <br>
+    </th:block>
+    <h1>TABLE</h1>
+    <th:block th:each="country : ${list}">
+       <table border="2" width="100%">
+        <tr>
+            <th width="100" th:utext="${country.getId}"></th>
+            <th width="200" th:utext="${country.getName}"></th>
+            <th width="100" th:utext="${country.getPopulation}"></th>
+            <th width="100" th:utext="${country.gdp}"></th>
+        </tr>
+        </table>
+    </th:block>
+    <a href="/countreshtml">Submit new  Country</a>
+    <a href="/countresdelite">Delite Country</a>
+</ul>
+</body>
+</html>
